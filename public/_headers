@@ -2,5 +2,9 @@
   Access-Control-Allow-Origin: *
   Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
   Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
-  Content-Security-Policy: connect-src 'self' https://ingest.quantummetric.com https://*.quantummetric.com; script-src 'self' https://cdn.quantummetric.com https://*.quantummetric.com 'unsafe-inline' 'unsafe-eval'
-  X-headers-By: _headers file
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://ingest.quantummetric.com https://*.quantummetric.com https://cdn.quantummetric.com; script-src 'self' https://cdn.quantummetric.com https://*.quantummetric.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; frame-ancestors 'none'
+  X-Headers-By: _headers file
