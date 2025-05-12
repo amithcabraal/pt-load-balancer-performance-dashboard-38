@@ -1,0 +1,6 @@
+/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+  Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+  Content-Security-Policy: connect-src 'self' https://ingest.quantummetric.com https://*.quantummetric.com; script-src 'self' https://cdn.quantummetric.com https://*.quantummetric.com 'unsafe-inline' 'unsafe-eval'
+  X-headers-By: _headers file
